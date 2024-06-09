@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Hesaplama</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Not Hesaplama</h1>
+        
+        <h2>1. Kurul Ortalamalarını Hesaplama</h2>
+        <form id="committeeForm">
+            <div class="input-group">
+                <label>Deri, Deri ekleri ve Hareket Sistemi (7 kredi):</label>
+                <input type="number" id="grade1" required>
+            </div>
+            <div class="input-group">
+                <label>Sinir Sistemi ve Duyu Organları (10 kredi):</label>
+                <input type="number" id="grade2" required>
+            </div>
+            <div class="input-group">
+                <label>Dolaşım Sistemi (7 kredi):</label>
+                <input type="number" id="grade3" required>
+            </div>
+            <div class="input-group">
+                <label>Solunum Sistemi (6 kredi):</label>
+                <input type="number" id="grade4" required>
+            </div>
+            <div class="input-group">
+                <label>Sindirim Sistemi (8 kredi):</label>
+                <input type="number" id="grade5" required>
+            </div>
+            <div class="input-group">
+                <label>Üriner Sistem (6 kredi):</label>
+                <input type="number" id="grade6" required>
+            </div>
+            <div class="input-group">
+                <label>Endokrin ve Üreme Sistemi (8 kredi):</label>
+                <input type="number" id="grade7" required>
+            </div>
+        </form>
+        
+        <h2>2. Final Notu Hesaplama</h2>
+        <form id="finalForm">
+            <div class="input-group">
+                <label>Anatomi Zilli Ortalaması (12.5):</label>
+                <input type="number" id="anatomi_zilli_avg" required>
+            </div>
+            <div class="input-group">
+                <label>Anatomi Zilli (12.5):</label>
+                <input type="number" id="anatomi_zilli" required>
+            </div>
+            <div class="input-group">
+                <label>Fizyoloji Sözlü (15):</label>
+                <input type="number" id="fizyoloji_sozlu" required>
+            </div>
+            <div class="input-group">
+                <label>Histoloji Sözlü (10):</label>
+                <input type="number" id="histoloji_sozlu" required>
+            </div>
+            <div class="input-group">
+                <label>Final Test 2 (50):</label>
+                <input type="number" id="final_test2" required>
+            </div>
+            <div class="input-group">
+                <label>TUS/DUS Çıkmışları (10):</label>
+                <input type="number" id="tus_dus" required>
+            </div>
+            <button type="button" onclick="calculateResults()">Final ve Kurul Notlarını Hesapla</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
